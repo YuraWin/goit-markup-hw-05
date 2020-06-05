@@ -69,6 +69,9 @@ a {
   display: flex;
   margin-left: 86px;
 }
+.site-nav .item {
+  position: relative;
+}
 /* *******************
 .site-nav .item {
   margin-right: 50px;
@@ -101,6 +104,16 @@ a {
   color: var(--accent-color);
 }
 
+.site-nav .link.current:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background: var(--accent-color);
+}
 /* Authentific*/
 .auth-nav {
   display: flex;
@@ -264,6 +277,7 @@ a {
   align-items: center;
   width: 200px;
   height: 50px;
+  cursor: pointer;
 
   font-family: inherit;
   font-weight: 900;
